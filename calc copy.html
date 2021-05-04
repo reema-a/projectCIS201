@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title> CALCULATOR </title>
+    <style>
+     
+    
+    
+    </style>
+    
+<script>    
+    function printNumber(x){
+        document.getElementById('mathOper').innerHTML+= x;
+        
+    }
+    function printOp(x){
+        document.getElementById('mathOper').innerHTML +=x;
+    }
+    function calculate(){
+        
+        var mathString = document.getElementById('mathOper').textContent;
+        document.getElementById('result').innerHTML = eval(mathString);
+    }
+    
+    
+    </script>
+    </head>
+    <body>  
+        <table>
+        <tr> 
+            <td><p id="mathOper"></p></td>
+            <td><p id="result">...</p></td>
+            
+        </tr>
+            
+        <tr>
+            <td> <button onclick="printNumber(1)"> 1</button></td>
+             <td> <button onclick="printNumber(2)"> 2</button></td>
+             <td> <button onclick="printNumber(3)"> 3</button></td>
+             <td> <button onclick="printNumber(4)"> 4</button></td>
+        
+      <tr>
+          <button onclick="printNumber(5)">5 </button>
+          <button onclick="printNumber(6)">6</button>
+          <button onclick="printNumber(7)">7</button>
+           <button onclick="printNumber(8)">8</button>
+           <button onclick="printNumber(9)">9</button>
+          <button onclick="printOp('+')"> + </button>
+          <button onclick="printOp('-')"> - </button>
+          <button onclick="calculate()"> calculate</button>
+            
+        
+        
+        
+        </table>
+    
+    </body>
+    <html>
